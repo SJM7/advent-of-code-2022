@@ -1,11 +1,10 @@
 def load_data() -> str:
-
     with open("problem6.txt", "r") as file:
         data = file.read()
 
     return data
 
-def parse_marker(signal: str) -> int:
+def parse_marker(signal: str):
     start_index = 0
     
     for i in range(0, len(signal) - 1):
